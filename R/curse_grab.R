@@ -1,4 +1,4 @@
-#' Curse combinations
+#' Concatenate combinations of curse and common nouns
 #'
 #' Probability samples and combines curse words w/ common nouns
 #'
@@ -21,11 +21,11 @@ curse_grab <- function(){
   profession <- profession %>% select(Word) %>% data.frame()
   suffix <- read.csv(here("data", "suffixes_db.csv"))
   suffix <- suffix %>% select(Word) %>% data.frame()
-    #Start sampling the number of repeated samples is specified by the fn argument x (default=1)
+  #Start sampling the number of repeated samples
   taboo_it <- taboo[sample(nrow(taboo), 1), ]  #sample and return 1 random row of curse words
   common_it <- common[sample(nrow(common), 1), ]  #sample and return 1 random row of commmon nouns
   suffix_it <- suffix[sample(nrow(suffix), 1), ] #sample and return 1 random row of suffixes
-  profession_it <- profession[sample(nrow(profession), 1), ] #sample and return 1 random row of     professions
+  profession_it <- profession[sample(nrow(profession), 1), ] #sample and return 1 random row of professions
   a <- paste0(taboo_it,common_it) #concatenate curse + common e.g.,dickrat
   b <- paste0(common_it, taboo_it) #concatenate common  curse e.g.,ratdick
   c <- paste0(taboo_it,common_it, suffix_it)
