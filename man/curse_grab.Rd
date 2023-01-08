@@ -2,7 +2,7 @@
 % Please edit documentation in R/curse_grab.R
 \name{curse_grab}
 \alias{curse_grab}
-\title{Curse combinations}
+\title{Concatenate combinations of curse and common nouns}
 \usage{
 curse_grab()
 }

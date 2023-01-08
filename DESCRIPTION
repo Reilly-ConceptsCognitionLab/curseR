@@ -1,13 +1,10 @@
 Package: curseR
 Type: Package
-Title: curseR: algorithmic creation of new combinations of curse words
+Title: curseR: algorithmic generation of compound curse words
 Version: 0.1.0
 Author: person("Jamie", "Reilly", role = c("aut", "cre"), email ="jamie_reilly@temple.edu")
 Maintainer: Jamie Reilly <jamie_reilly@temple.edu>
-Description: In American English, many new curse words (e.g., asshat) emerge from combinations of existing curse words (e.g., ass) with common nouns (e.g., hat).  This combinatorial process is not random. In 2020, our lab reported some of the semantic and phonological properties that govern such combinations (see https://link.springer.com/article/10.3758/s13423-019-01685-8).    
-
-These processes constitute an algorithm implemented in the curseR Rpackage. The curse() function produces a series of new polysyllabic curse words on demand. The default is 3 words, but users are invited to produce any number of curse words they desire by specifying that number in the function call. For example, typing 'curse(15)' will generate 15 curse words nobody has ever seen before.   
-
+Description: In American English, many new curse words (e.g., asshat) emerge from combinations of existing curse words with common nouns (e.g., ass+hat).  This combinatorial process is not random. In 2020, our lab reported some of the semantic and phonological properties that govern such combinations (see https://link.springer.com/article/10.3758/s13423-019-01685-8). These processes constitute an algorithm implemented in the curseR Rpackage. The curse() function produces a series of new polysyllabic curse words on demand. The default is 3 words, but users are invited to produce any number of curse words they desire by specifying that number in the function call. For example, typing 'curse(15)' will generate 15 curse words nobody has ever seen before.   
 License: GPL (>= 3)
 Encoding: UTF-8
 LazyData: true
