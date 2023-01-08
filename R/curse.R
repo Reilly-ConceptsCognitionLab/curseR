@@ -8,6 +8,6 @@
 
 curse<- function(x=3) {
   x <- as.integer(x)
-  cursing <- replicate(x, curse_grab1())
+  cursing <- replicate(x, curseR:::curse_grab()) #call internal helper function
   print(cursing, quote=F)
 }

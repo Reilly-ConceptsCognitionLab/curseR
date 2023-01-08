@@ -6,7 +6,7 @@
 #' @importFrom here here
 #' @importFrom magrittr %>%
 #' @importFrom dplyr select
-#' @export curse_grab
+#' @keyword Internal
 
 curse_grab <- function(){
   curse <- curse_db
