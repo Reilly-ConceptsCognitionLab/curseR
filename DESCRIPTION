@@ -6,6 +6,7 @@ Author: person("Jamie", "Reilly", role = c("aut", "cre"), email ="jamie_reilly@t
 Maintainer: Jamie Reilly <jamie_reilly@temple.edu>
 Description: New words emerge in natural language all the time. Curse words are unique in that many new curse words are formed by combining existing curse words (e.g., ass) with common nouns (e.g., hat).  This process is not random. Some combinations make outstanding new curse words, whereas other combinations fall flat.  We wrote a paper describing the phonological and semantic factors that govern this process. This package implements this algorithm to produce new polysyllabic curse words on demand. The default is 3 words, but you are invited to output any number you like by specifying it in the function call. For example, typing 'curse(15)' will generate 15 curse words nobody has ever seen before. 
 License: GPL (>= 3)
+Encoding: UTF-8
 LazyData: true
 Depends: 
     R (>= 2.10)
