@@ -1,0 +1,62 @@
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+# curseR: algorithmic generation of compound curse words
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+## Overview
+
+curseR generates novel combinations of curse words by combining existing
+English curse words with common nouns from several categories (e.g.,
+professions, dwellings, receptacles, body parts). These combinations
+follow an algorithm for ‘building the perfect curse word’ outlined in:
+<br/>
+
+Reilly J, Kelly A, Zuckerman B, Twigg P, Wells M, Jobson K, & Flurie M
+(2020) Building the perfect curse word: A psycholinguistic investigation
+of the form and meaning of taboo words. Psychonomic Bulletin & Review.
+27(1), 139-148. <doi:10.3758/s13423-019-01685-8>. <br/>
+
+Our study was even featured in Discover Magazine! <br/>
+
+![](https://reilly-lab.github.io/profane.png) Visit the article here:
+<br/> <https://link.springer.com/article/10.3758/s13423-019-01685-8>
+<br/>
+
+I curated these curse words from several sources, including:
+<https://www.cs.cmu.edu/~biglou/resources/bad-words.txt> <br />
+<https://github.com/coffee-and-fun/google-profanity-words> <br />
+
+I omitted hate speech, racial, and ethnic slurs from the lookup
+databases. Users should be warned though that the list is still composed
+of some very strong profanity, including body part slang.
+
+## Installation
+
+Install the development version of curseR from
+[GitHub](https://github.com/) by typing the following in your console or
+script (make sure you have devtools installed):
+
+``` r
+# install.packages("devtools")
+devtools::install_github("Reilly-ConceptsCognitionLab/curseR")
+```
+
+## Run it!
+
+There is only one function, and that function only takes one argument.
+The function is curse(), and the argument is just an integer specifying
+how many curse words you would like the function to return
+
+``` r
+curse()  #by default returns a character vector of three curse words
+curse(10) #returns a character vector of 10 curse words
+curse(50) #returns a character vector of 50 curse words
+```
+
+## Get in touch
+
+Email Jamie Reilly at reillyj at temple dot edu with any feedback on new
+and exciting combinations of curse words.
