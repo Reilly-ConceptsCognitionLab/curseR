@@ -3,7 +3,6 @@
 #' Probability samples and combines curse words w/ common nouns
 #'
 #' @name curse_grab
-#' @importFrom here here
 #' @importFrom magrittr %>%
 #' @importFrom dplyr select
 #' @keyword Internal
