@@ -14,7 +14,7 @@ curse_grab <- function(){
   taboo <- taboo %>% select(Word) %>% data.frame()
   common <- common %>% select(Word) %>% data.frame()
   profession <- profession %>% select(Word) %>% data.frame()
-  suffix <- suffix %>% select(Word) %>% data.frame()
+  suffix <- suffixes %>% select(Word) %>% data.frame()
   #Start sampling the number of repeated samples
   taboo_it <- taboo[sample(nrow(taboo), 1), ]  #sample and return 1 random row of curse words
   common_it <- common[sample(nrow(common), 1), ]  #sample and return 1 random row of commmon nouns
