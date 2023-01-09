@@ -4,6 +4,7 @@
 #'
 #' @name curse_grab
 #' @importFrom magrittr %>%
+#' @importFrom dplyr %>%
 #' @importFrom dplyr select
 
 curse_grab <- function(){
