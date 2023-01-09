@@ -10,7 +10,7 @@
 curse_grab <- function(){
   curse <- curse_db
   common <- common_db
-  jobs <- professions_db
+  profession <- professions_db
   suffixes <- suffixes_db
   curse <- curse %>% select(Word) %>% data.frame()
   common <- common %>% select(Word) %>% data.frame()
