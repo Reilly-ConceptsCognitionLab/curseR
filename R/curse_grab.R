@@ -5,14 +5,13 @@
 #' @name curse_grab
 #' @importFrom magrittr %>%
 #' @importFrom dplyr select
-#' @export curse_grab
 
 curse_grab <- function(){
-  curse <- curse_db
+  taboo <- curse_db
   common <- common_db
   profession <- professions_db
   suffixes <- suffixes_db
-  curse <- curse %>% select(Word) %>% data.frame()
+  taboo <- taboo %>% select(Word) %>% data.frame()
   common <- common %>% select(Word) %>% data.frame()
   profession <- profession %>% select(Word) %>% data.frame()
   suffix <- suffix %>% select(Word) %>% data.frame()
