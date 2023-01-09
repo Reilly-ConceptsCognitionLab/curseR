@@ -2,4 +2,4 @@
 
 export(curse)
 importFrom(dplyr,select)
-importFrom(magrittr,'%>%')
+importFrom(magrittr,"%>%")
