@@ -3,9 +3,8 @@
 #' Probability samples and combines curse words w/ common nouns
 #'
 #' @name curse_grab
-#' @importFrom magrittr %>%
+#' @importFrom magrittr '%>%'
 #' @importFrom dplyr select
-#' @keyword Internal
 
 curse_grab <- function(){
   curse <- curse_db
