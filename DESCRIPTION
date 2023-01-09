@@ -19,6 +19,7 @@ LazyData: true
 Depends: 
     R (>= 2.10),
     dplyr (>= 0.4.3),
+    magrittr (>= 2.0.3)
 Imports: 
     dplyr,
     magrittr
@@ -30,3 +31,4 @@ Suggests:
 VignetteBuilder: rmarkdown
 URL: https://reilly-conceptscognitionlab.github.io/curseR
 Config/testthat/edition: 3
+RoxygenNote: 7.2.3
