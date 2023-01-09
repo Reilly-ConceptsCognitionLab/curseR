@@ -9,4 +9,5 @@
 library(testthat)
 library(curseR)
 
-test_check("curseR")
+testthat::test_check("curseR")
+

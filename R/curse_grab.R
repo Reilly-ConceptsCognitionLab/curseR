@@ -13,13 +13,9 @@ curse_grab <- function(){
   common <- common_db
   jobs <- professions_db
   suffixes <- suffixes_db
-  taboo <- read.csv(here("data", "curse_db.csv"))
-  taboo <- taboo %>% select(Word) %>% data.frame()
-  common <- read.csv(here("data", "common_db.csv"))
+  curse <- curse %>% select(Word) %>% data.frame()
   common <- common %>% select(Word) %>% data.frame()
-  profession <- read.csv(here("data", "professions_db.csv"))
   profession <- profession %>% select(Word) %>% data.frame()
-  suffix <- read.csv(here("data", "suffixes_db.csv"))
   suffix <- suffix %>% select(Word) %>% data.frame()
   #Start sampling the number of repeated samples
   taboo_it <- taboo[sample(nrow(taboo), 1), ]  #sample and return 1 random row of curse words
