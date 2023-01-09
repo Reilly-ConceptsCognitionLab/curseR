@@ -4,8 +4,8 @@
 #'
 #' @name curse_grab
 #' @importFrom magrittr %>%
-#' @importFrom dplyr %>%
 #' @importFrom dplyr select
+#' @export curse_grab
 
 curse_grab <- function(){
   curse <- curse_db

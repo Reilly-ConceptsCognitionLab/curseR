@@ -6,7 +6,6 @@
 #' @param x integer specifying number of curse words to return, default is 3
 #' @importFrom magrittr %>%
 #' @importFrom dplyr select
-#' @importFrom dplyr %>%
 #' @export curse
 
 curse<- function(x=3) {
