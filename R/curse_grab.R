@@ -22,9 +22,11 @@ curse_grab <- function(){
   profession_it <- profession[sample(nrow(profession), 1), ] #sample and return 1 random row of professions
   a <- paste0(taboo_it,common_it) #concatenate curse + common e.g.,dickrat
   b <- paste0(common_it, taboo_it) #concatenate common  curse e.g.,ratdick
-  c <- paste0(taboo_it,common_it, suffix_it)
-  d <- paste0(common_it, taboo_it, suffix_it)
-  e <- paste0(taboo_it, profession_it)
-  mycurse <- sample(c(a,b,c,d,e),1, prob=c(0.3,0.3, 0.1, 0.1, 0.2))
+  c <- paste0(taboo_it,common_it, suffix_it) #dicktreeman
+  d <- paste0(common_it, taboo_it, suffix_it) 
+  e <- paste0(taboo_it, profession_it) #assjockey
+  f <- paste0(taboo_it, taboo_it)   #titfuck
+  g <- paste0(taboo_it, suffix_it)  #fuckman, #fuckologist
+  mycurse <- sample(c(a,b,c,d,e,f,g),1, prob=c(0.3,0.2, 0.05, 0.1, 0.2, 0.05, 0.1))
   return(mycurse)
 }
